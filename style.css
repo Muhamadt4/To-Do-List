@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  background: #cbf3f0;
+}
+.cont {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 800px;
+  flex-direction: column;
+}
+.todo-app {
+  width: 100%;
+
+  padding: 20px;
+  background-color: #ffbf69;
+}
+.todo-app > h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+.row input {
+  flex: 1;
+  background-color: transparent;
+  padding: 12px;
+  border: none;
+}
+.row .btn {
+  text-align: center;
+  padding: 12px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: none;
+  background-color: #dd9e45b9;
+  transition: 0.5s;
+}
+.row .btn:hover {
+  background-color: #dd9e45;
+  transition: 0.5s;
+}
+
+.row input::placeholder {
+  padding: 6px;
+}
+.second-cont {
+  width: 100%;
+}
+ul li {
+  position: relative;
+  background-color: #2ec4b6;
+  padding: 12px 8px 12px 50px;
+  list-style: none;
+  user-select: none;
+  transition: 0.2s;
+  width: 100%;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  background-image: url(unchecked.png);
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  left: 11px;
+  top: 11px;
+  transition: 0.3s;
+}
+ul li.checked::before {
+  transition: 0.3s;
+  background-image: url(checked.png);
+}
+ul li:hover {
+  background-color: #2ec4b5a7;
+  transition: 0.2s;
+}
+.checked {
+  text-decoration: line-through;
+  transition: 0.3s;
+  background-color: #32877e;
+}
+ul li span {
+  position: absolute;
+  text-align: center;
+  right: 0;
+  top: 0px;
+  width: 45px;
+  height: 46px;
+  font-size: 35px;
+}
+ul li span:hover {
+  background-color: rgba(255, 255, 255, 0.316);
+}
