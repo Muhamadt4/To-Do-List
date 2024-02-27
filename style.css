@@ -11,7 +11,7 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 40px;
-  background: #cbf3f0;
+  background: linear-gradient(to right, #bdbdbd, #282828);
 }
 .cont {
   display: flex;
@@ -25,7 +25,7 @@ body {
   width: 100%;
 
   padding: 20px;
-  background-color: #ffbf69;
+  background-color: #b9b8b7;
 }
 .todo-app > h1 {
   display: flex;
@@ -54,11 +54,11 @@ body {
   padding-left: 40px;
   padding-right: 40px;
   border: none;
-  background-color: #dd9e45b9;
+  background-color: #d1d0d0b9;
   transition: 0.5s;
 }
 .row .btn:hover {
-  background-color: #dd9e45;
+  background-color: #9e9d9c;
   transition: 0.5s;
 }
 
@@ -70,7 +70,7 @@ body {
 }
 ul li {
   position: relative;
-  background-color: #2ec4b6;
+  background-color: #afb1b1;
   padding: 12px 8px 12px 50px;
   list-style: none;
   user-select: none;
@@ -94,13 +94,13 @@ ul li.checked::before {
   background-image: url(checked.png);
 }
 ul li:hover {
-  background-color: #2ec4b5a7;
+  background-color: #828282a7;
   transition: 0.2s;
 }
 .checked {
   text-decoration: line-through;
   transition: 0.3s;
-  background-color: #32877e;
+  background-color: #454545;
 }
 ul li span {
   position: absolute;
